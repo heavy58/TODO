@@ -1,0 +1,74 @@
+#back{
+    background-color: #4696E5;
+    display: grid;
+    justify-content: flex-end;
+
+}
+.To{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+    margin-left: 1010px;
+}
+#addnew{
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: white; 
+    margin-left:1049px; 
+}
+#add{
+    background-color: #4696E5;
+    color: white;
+    width: 95px;
+    margin-top: 10px;
+    margin-left: 1100px;
+    height: 52px;
+    margin-bottom: 35px;
+    margin-right: 100px;
+}
+#searchbar{
+width: 1192px;
+height: 30px;
+}
+#let{
+    color: #838383;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+#font{
+    border-bottom: 1px solid #EBEBEB;
+}
+#items{
+    list-style-type:none;
+}
+.checked {
+    background:gray;
+    color: white;
+    text-decoration: line-through;}
+
+    .nochecked {
+        background: gray;
+        color: #fff;
+        text-decoration: none;}
+    
+
+
+
+/*ul li.checked::before {
+        content: '';
+        position: absolute;
+        border-color:black;
+        border-style: solid;
+        border-width: 0 2px 2px 0;
+        top: 10px;
+        left: 16px;
+        transform: rotate(45deg);
+        height: 15px;
+        width: 7px;
+      }*/

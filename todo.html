@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="back">
+
+        <p class="To"><b>To-Do App!</b></p>
+        <p id="addnew"><b>Add new To-Do</b></p>
+        <input type="text" placeholder="Enter new task" name="search" id="searchbar">
+        <button id="add" onclick="add1()"><b>Add</b></button>
+    </div>
+    <div id="font">
+        <p id="let"><b>Let's get some work done!</b></p>
+    </div>
+    <div>
+        <ul id="items">
+
+
+        </ul>
+
+
+
+
+
+    </div>
+    <script>
+
+        function add1() {
+        //     var li = document.createElement("li");
+        //     var inputValue = document.getElementById("myInput").value;
+        //     var t = document.createTextNode(inputValue);
+        //     li.appendChild(t);
+        //     if (inputValue === '') {
+        //         alert("You must write something!");
+        //     } else {
+        //         document.getElementById("items").appendChild(li);
+        //     }
+        //     document.getElementById("items").value = "";
+
+        //     var span = document.createElement("SPAN");
+        //     var txt = document.createTextNode("\u00D7");
+        //     span.className = "close";
+        //     span.appendChild(txt);
+        //     li.appendChild(span);
+
+        //     for (i = 0; i < close.length; i++) {
+        //         close[i].onclick = function () {
+        //             var div = this.parentElement;
+        //             div.style.display = "none";
+        //         }
+        //     }
+        // }
+            const ul = document.getElementById('items')
+           let li = document.createElement('li')
+           let button1=document.createElement('button')
+           let button2=document.createElement('button')
+           let inputValue = document.getElementById('searchbar').value
+            let Text = document.createTextNode(inputValue)
+                li.appendChild(button1)
+                li.appendChild(button2)  
+                li.className = "nochecked";
+
+                li.appendChild(Text) 
+                ul.appendChild(li)
+                button1.textContent='complete';
+                button2.textContent='Delete';
+                button1.className = "close";
+                button2.addEventListener('click',(e)=>{
+                    e.preventDefault()
+                    deletee()
+                })
+                
+
+               
+
+                button1.addEventListener('click', (e) =>{
+                    e.preventDefault()
+                change()
+                })
+
+        
+        
+             function change(){
+             button1.textContent= 'undo';
+             li.style.textDecoration = "line-through"
+            
+         }
+         
+         function deletee(){
+             li.remove();
+         }}
+         
+         
+        
+    
+        
+
+
+
+
+
+
+              /*li.classList.add("checked");
+                    var list=document.querySelector('ul');
+
+
+         list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'li') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
+*/
+              
+</script>
+</body>
+</html>
